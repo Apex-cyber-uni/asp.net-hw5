@@ -1,0 +1,350 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Глобальні налаштування для акуратного вигляду */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* =========================================
+   Спільні стилі для обох форм
+   ========================================= */
+form {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5c636a;
+    margin-bottom: 16px;
+    gap: 6px;
+}
+
+input[type="text"] {
+    padding: 10px 14px;
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+    input[type="text"]:focus {
+        border-color: #6366f1;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    }
+
+button[type="submit"], input[type="submit"] {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+    button[type="submit"]:hover {
+        background-color: #4f46e5;
+    }
+
+    button[type="submit"]:active {
+        transform: translateY(1px);
+    }
+
+/* =========================================
+   Верхня форма пошуку (#search)
+   ========================================= */
+#search {
+    display: flex;
+    align-items: flex-end; /* Вирівнює кнопку по нижньому краю інпуту */
+    gap: 15px;
+    max-width: 400px;
+}
+
+    #search label {
+        margin-bottom: 0;
+        flex-grow: 1;
+    }
+
+/* =========================================
+   Нижня форма створення (#Form)
+   ========================================= */
+#Form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: end;
+}
+
+    /* Кнопка створення займає окремий рядок на вузьких екранах */
+    #Form button {
+        grid-column: 1 / -1;
+        width: max-content;
+    }
+
+/* =========================================
+   Контейнер з іграми (#Container)
+   ========================================= */
+#Container {
+    /* flex задано у вашому HTML, додаємо перенесення та відступи */
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* =========================================
+   Основна картка
+   ========================================= */
+.item {
+    background: #ffffff;
+    width: 280px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.1);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Необхідно для позиціонування форми видалення */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+    .item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(149, 157, 165, 0.2);
+        border-color: #e0e7ff;
+    }
+
+    /* =========================================
+   Текстова інформація
+   ========================================= */
+    .item h3:first-of-type {
+        margin: 0 0 4px 0;
+        font-size: 1.3rem;
+        color: #111827;
+        padding-right: 35px; /* Захист від налізання тексту на кнопку "X" */
+    }
+
+    .item h3:nth-of-type(2) {
+        margin: 0 0 16px 0;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #6b7280;
+        text-transform: uppercase;
+    }
+
+    .item p {
+        margin: 0 0 16px 0;
+        font-size: 1rem;
+        color: #111827;
+        font-weight: 600;
+    }
+
+        .item p::before {
+            content: "Рейтинг: ";
+            color: #9ca3af;
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+
+    /* =========================================
+   Форма з чекбоксом
+   ========================================= */
+    .item label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.95rem;
+        color: #4b5563;
+        cursor: pointer;
+    }
+
+    .item input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: #10b981;
+        cursor: pointer;
+    }
+
+    /* =========================================
+   Кнопка "More details"
+   ========================================= */
+    .item a {
+        text-decoration: none;
+        margin-top: auto; /* Завжди притискає кнопку до низу картки */
+        display: block;
+    }
+
+        .item a button {
+            width: 100%;
+            background-color: #f3f4f6;
+            color: #4b5563;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+            .item a button:hover {
+                background-color: #6366f1;
+                color: #ffffff;
+            }
+
+    /* =========================================
+   Форма видалення та кругла кнопка "X"
+   ========================================= */
+    .item .delete-form {
+        position: absolute; /* Відв'язуємо форму від загального потоку */
+        top: 16px;
+        right: 16px;
+        margin: 0;
+    }
+
+        .item .delete-form input[type="submit"] {
+            width: 32px;
+            height: 32px;
+            background-color: #fee2e2;
+            color: #ef4444;
+            border: none;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            transition: all 0.2s ease;
+        }
+
+            .item .delete-form input[type="submit"]:hover {
+                background-color: #ef4444;
+                color: #ffffff;
+                transform: scale(1.1) rotate(90deg); /* Обертання при наведенні */
+            }
+        }
+/* Кнопка "Назад" */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #4b5563;
+    background-color: #f3f4f6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    transition: all 0.2s ease;
+}
+
+    /* Додаємо символічну стрілочку до кнопки через CSS */
+    .btn-back::before {
+        content: "←";
+        font-size: 1.1rem;
+    }
+
+    .btn-back:hover {
+        background-color: #e5e7eb;
+        color: #111827;
+        transform: translateX(-3px); /* Легкий зсув вліво при наведенні */
+    }
+
+/* Контейнер деталей гри */
+.details-game {
+    background: #ffffff;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(149, 157, 165, 0.15);
+    border: 1px solid #f0f0f0;
+}
+
+    /* Назва гри (перший h3) */
+    .details-game h3:first-of-type {
+        margin: 0 0 8px 0;
+        font-size: 2.2rem;
+        color: #111827;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    /* Жанр (другий h3) */
+    .details-game h3:last-of-type {
+        margin: 0 0 24px 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #6366f1; /* Виділяємо жанр фірмовим кольором */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Рейтинг гри */
+    .details-game p {
+        font-size: 1.2rem;
+        color: #111827;
+        font-weight: 600;
+        margin: 0 0 32px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        /* Підпис для рейтингу */
+        .details-game p::before {
+            content: "Рейтинг:";
+            font-weight: 500;
+            color: #6b7280;
+            font-size: 1rem;
+        }
+
+    /* Стилізація блоку з чекбоксом */
+    .details-game label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: max-content;
+        gap: 20px;
+        padding: 12px 24px;
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #334155;
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s;
+    }
+
+        .details-game label:hover {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+    /* Стилізація самого чекбокса (працює в усіх сучасних браузерах) */
+    .details-game input[type="checkbox"] {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        accent-color: #10b981; /* Приємний зелений колір при активації */
+        margin: 0;
+    }

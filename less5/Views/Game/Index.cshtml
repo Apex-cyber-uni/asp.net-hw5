@@ -1,0 +1,45 @@
+﻿@model List<Game>
+
+<form action="/Game/Index" method="get" id="search">
+	<label for="searchInput">Search by Genre:
+		<input type="text" name="search" id="searchInput" />
+	</label>
+	<button type="submit">Find</button>
+</form>
+
+<div id="Container" style="display:flex;">
+	@foreach (var game in Model)
+	{
+		<div class="item">
+				<h3>@game.Name</h3>
+				<h3>@game.Genre</h3>
+				<p>@game.Rating</p>
+				<form action="/Game/UpdateStatus" method="post" style="margin-bottom: 24px;">
+					<input type="hidden" name="id" value="@game.Id" />
+					<label>
+						Completed:
+						<input type="checkbox" name="IsCompleted" value="true"
+						@(game.IsCompleted ? "checked" : "") onchange="this.form.submit()" />
+					</label>
+				</form>
+					<input type="hidden" name="id" value="@game.Id" />
+				<a href="/Game/Details/@game.Id"><button type="button">More details</button></a>
+			<form action="/Game/Delete" method="post" class="delete-form">
+				<input type="submit" id="submit" value="X" />
+			</form>
+		</div>
+	}
+</div>
+<form action="/Game/Index" method="post" id="Form">
+		<label for="name">Name:
+			<input type="text" name="Name" id="name" />
+		</label>
+		<label for="genre">Genre:
+			<input type="text" name="Genre" id="genre" />
+		</label>
+		<label for="rating">Rating:
+			<input type="text" name="Rating" id="rating" />
+		</label>
+		<label for="completed">Completed:<input type="checkbox" name="IsCompleted" id="completed" value="true" /></label>
+		<button type="submit">Create game</button>
+</form>

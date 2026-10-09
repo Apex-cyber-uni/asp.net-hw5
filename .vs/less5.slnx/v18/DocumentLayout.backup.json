@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|d:\\it-office\\projects\\coding(asp-net)\\hw5\\less5\\views\\game\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|solutionrelative:less5\\views\\game\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|d:\\it-office\\projects\\coding(asp-net)\\hw5\\less5\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|solutionrelative:less5\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|d:\\it-office\\projects\\coding(asp-net)\\hw5\\less5\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|solutionrelative:less5\\wwwroot\\css\\game.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|d:\\it-office\\projects\\coding(asp-net)\\hw5\\less5\\views\\game\\completed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|solutionrelative:less5\\views\\game\\completed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|d:\\it-office\\projects\\coding(asp-net)\\hw5\\less5\\views\\game\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|solutionrelative:less5\\views\\game\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|d:\\it-office\\projects\\coding(asp-net)\\hw5\\less5\\views\\game\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|solutionrelative:less5\\views\\game\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|d:\\it-office\\projects\\coding(asp-net)\\hw5\\less5\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D77714F-914A-9AA1-84AA-7814CF752D3F}|less5\\less5.csproj|solutionrelative:less5\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "less5\\Controllers\\GameController.cs",
+              "ToolTip": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Controllers\\GameController.cs",
+              "RelativeToolTip": "less5\\Controllers\\GameController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwDsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T07:54:05.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "less5\\Models\\Game.cs",
+              "ToolTip": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Models\\Game.cs",
+              "RelativeToolTip": "less5\\Models\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T07:37:06.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Completed.cshtml",
+              "DocumentMoniker": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Completed.cshtml",
+              "RelativeDocumentMoniker": "less5\\Views\\Game\\Completed.cshtml",
+              "ToolTip": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Completed.cshtml",
+              "RelativeToolTip": "less5\\Views\\Game\\Completed.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-08T13:44:35.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Details.cshtml",
+              "RelativeDocumentMoniker": "less5\\Views\\Game\\Details.cshtml",
+              "ToolTip": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Details.cshtml",
+              "RelativeToolTip": "less5\\Views\\Game\\Details.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-08T13:27:49.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Error.cshtml",
+              "RelativeDocumentMoniker": "less5\\Views\\Game\\Error.cshtml",
+              "ToolTip": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Error.cshtml",
+              "RelativeToolTip": "less5\\Views\\Game\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-08T13:42:56.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "game.css",
+              "DocumentMoniker": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\wwwroot\\css\\game.css",
+              "RelativeDocumentMoniker": "less5\\wwwroot\\css\\game.css",
+              "ToolTip": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\wwwroot\\css\\game.css",
+              "RelativeToolTip": "less5\\wwwroot\\css\\game.css",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwPEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-07T17:08:00.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Index.cshtml",
+              "RelativeDocumentMoniker": "less5\\Views\\Game\\Index.cshtml",
+              "ToolTip": "D:\\IT-office\\projects\\Coding(asp-net)\\hw5\\less5\\Views\\Game\\Index.cshtml*",
+              "RelativeToolTip": "less5\\Views\\Game\\Index.cshtml*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-07T16:44:25.606Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

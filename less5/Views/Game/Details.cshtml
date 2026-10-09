@@ -1,0 +1,14 @@
+﻿@model Game
+<a class="btn-back" asp-controller="Game" asp-action="BackToIndex">Back to Main</a>
+<div>
+    <form asp-controller="Game" asp-action="UpdateStatus" method="post" class="details-game">
+	<h3>@Model.Name</h3>
+	<h3>@Model.Genre</h3>
+	<p>@Model.Rating</p>
+    <label>
+        Completed:
+            <input type="checkbox" name="IsCompleted" value="true"
+        @(Model.IsCompleted ? "checked" : "")  onchange="this.form.submit()" />
+    </label>
+    </form>
+</div>
