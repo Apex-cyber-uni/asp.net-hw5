@@ -198,3 +198,4 @@ D:\IT-office\projects\Coding(asp-net)\hw5\less5\obj\Debug\net10.0\less5.genrunti
 D:\IT-office\projects\Coding(asp-net)\hw5\less5\obj\Debug\net10.0\ref\less5.dll
 D:\IT-office\projects\Coding(asp-net)\hw5\less5\obj\Debug\net10.0\less5.csproj.Up2Date
 D:\IT-office\projects\Coding(asp-net)\hw5\less5\obj\Debug\net10.0\compressed\124lf2x0zi-{0}-8i9af97qua-8i9af97qua.gz
+D:\IT-office\projects\Coding(asp-net)\hw5\less5\obj\Debug\net10.0\less5.sourcelink.json

@@ -11,20 +11,20 @@
 	@foreach (var game in Model)
 	{
 		<div class="item">
-				<h3>@game.Name</h3>
-				<h3>@game.Genre</h3>
-				<p>@game.Rating</p>
-				<form action="/Game/UpdateStatus" method="post" style="margin-bottom: 24px;">
-					<input type="hidden" name="id" value="@game.Id" />
-					<label>
-						Completed:
-						<input type="checkbox" name="IsCompleted" value="true"
-						@(game.IsCompleted ? "checked" : "") onchange="this.form.submit()" />
-					</label>
-				</form>
-					<input type="hidden" name="id" value="@game.Id" />
-				<a href="/Game/Details/@game.Id"><button type="button">More details</button></a>
+			<h3>@game.Name</h3>
+			<h3>@game.Genre</h3>
+			<p>@game.Rating</p>
+			<form action="/Game/UpdateStatus" method="post" style="margin-bottom: 24px;">
+				<input type="hidden" name="id" value="@game.Id" />
+				<label>
+					Completed:
+					<input type="checkbox" name="IsCompleted" value="true"
+					@(game.IsCompleted ? "checked" : "") onchange="this.form.submit()" />
+				</label>
+			</form>
+			<a href="/Game/Details/@game.Id"><button type="button">More details</button></a>
 			<form action="/Game/Delete" method="post" class="delete-form">
+				<input type="hidden" name="id" value="@game.Id" />
 				<input type="submit" id="submit" value="X" />
 			</form>
 		</div>
