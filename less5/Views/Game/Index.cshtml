@@ -6,7 +6,7 @@
 	</label>
 	<button type="submit">Find</button>
 </form>
-
+<a href="/Game/Create"><button type="button">Create game</button></a>
 <div id="Container" style="display:flex;">
 	@foreach (var game in Model)
 	{
@@ -30,16 +30,3 @@
 		</div>
 	}
 </div>
-<form action="/Game/Index" method="post" id="Form">
-		<label for="name">Name:
-			<input type="text" name="Name" id="name" />
-		</label>
-		<label for="genre">Genre:
-			<input type="text" name="Genre" id="genre" />
-		</label>
-		<label for="rating">Rating:
-			<input type="text" name="Rating" id="rating" />
-		</label>
-		<label for="completed">Completed:<input type="checkbox" name="IsCompleted" id="completed" value="true" /></label>
-		<button type="submit">Create game</button>
-</form>

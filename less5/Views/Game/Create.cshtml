@@ -1,12 +1,16 @@
-﻿<form action="/Game/Create" method="post">
-		<label for="rating">Name:
-			<input type="text" name="Name" id="name" />
-		</label>
-		<label for="rating">Price:
-			<input type="text" name="Price" id="price" />
-		</label>
-		<label for="rating">Rating:
-			<input type="text" name="Rating" id="rating" />
-		</label>
-		<button type="submit">Create game</button>
+﻿<form action="/Game/Create" method="post" id="Form">
+	<label for="name">
+		Name:
+		<input type="text" name="Name" id="name" />
+	</label>
+	<label for="genre">
+		Genre:
+		<input type="text" name="Genre" id="genre" />
+	</label>
+	<label for="rating">
+		Rating:
+		<input type="text" name="Rating" id="rating" />
+	</label>
+	<label for="completed">Completed:<input type="checkbox" name="IsCompleted" id="completed" value="true" /></label>
+	<button type="submit">Create game</button>
 </form>

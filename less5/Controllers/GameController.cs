@@ -23,12 +23,17 @@ namespace less5.Controllers
             Games.Remove(foundGame!);
             return View("Index",Games );
         }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
         [HttpPost]
-        public IActionResult Index(Game game)
+        public IActionResult Create(Game game)
         {
             game.Id = Games.Count;
             Games.Add(game);
-            return View(Games);
+            return View("Index", Games);
         }
         public IActionResult Details(int id) {
             var game = Games.FirstOrDefault(x => x.Id == id);
